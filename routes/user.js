@@ -25,7 +25,7 @@ router.get("/signup", middleware.isNotLoggedIn, (req, res) => {
     pageName: "Sign Up",
   });
 });
-// POST: handle the signup logic
+// POST: handling the signup logic
 router.post(
   "/signup",
   [
@@ -72,7 +72,7 @@ router.get("/signin", middleware.isNotLoggedIn, async (req, res) => {
   });
 });
 
-// POST: handle the signin logic
+// POST: handling the signin logic
 router.post(
   "/signin",
   [
