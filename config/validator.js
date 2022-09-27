@@ -1,3 +1,5 @@
+// All the Validations 
+
 const { check, validationResult } = require("express-validator");
 
 const userSignUpValidationRules = () => {
