@@ -21,12 +21,9 @@ async function seedDB() {
     await mongoose.disconnect();
   }
   await seedCateg("Men");
-  await seedCateg("Perfumes");
-  await seedCateg("Women");
   await seedCateg("Kids");
-  await seedCateg("Shoes");
-  await seedCateg("Watches");
-  await seedCateg("Purses");
+  await seedCateg("Women");
+
   await closeDB();
 }
 
