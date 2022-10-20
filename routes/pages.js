@@ -16,6 +16,13 @@ router.get("/about-us", (req, res) => {
   });
 });
 
+//GET: display admin page
+router.get("/admin", (req, res) => {
+  res.render("/admin", {
+    pageName: "Admin",
+  });
+});
+
 
 //GET: display contact us page and form with csrf tokens
 router.get("/contact-us", (req, res) => {
