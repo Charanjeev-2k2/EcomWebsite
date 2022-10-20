@@ -29,5 +29,7 @@ userSchema.methods.validPassword = function (candidatePassword) {
     return false;
   }
 };
-
+// passing the collection name and the schema for it 
+// nodemon helps to avoid re running the code 
+// exports is used so that we can view this schema in other files 
 module.exports = mongoose.model("User", userSchema);
